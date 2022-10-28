@@ -6,6 +6,9 @@
 <body>
 <h1>MINIMARKET</h1><hr>
 <h4>Product Details info</h4>
+<#list  images as img>
+    <img src="/images/${img.id}" height="60px"/><br><br>
+</#list>
 <b>Name of product:</b>${product.title}<br>
 <b>Product description:</b>${product.description}<br>
 <b>Price:</b>${product.price}<br>
